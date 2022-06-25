@@ -12,9 +12,6 @@ hugo.linux
 # Temporary lock file while building
 /.hugo_build.lock
 
-# Theme (this is re-added in the CI/CD pipeline)
-/themes
-
 # Swap files
 *.swp
 *.swo
