@@ -36,7 +36,7 @@ jobs:
           name: public
           path: ./public/
       
-      - name: Debug
+      - name: Show files 
         run: ls -R ./public
   
   deploy:
@@ -49,10 +49,7 @@ jobs:
           name: public
           path: ./public
 
-      - name: Debug-1
-        run: ls -la
-
-      - name: Debug-2
+      - name: Show files 
         run: ls -R ./public
 
       - name: Configure AWS Credentials
