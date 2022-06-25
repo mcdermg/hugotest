@@ -41,7 +41,10 @@ jobs:
         with:
           name: public
 
-      - name: Debug
+      - name: Debug-1
+        run: ls -la
+
+      - name: Debug-2
         run: ls -R ./public
 
       - name: Configure AWS Credentials
