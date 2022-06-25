@@ -1,0 +1,57 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ secrets.HUGO_VERSION }
+
+      - name: Hugo build
+        run: hugo -D
+      
+      - name: Upload public directory artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: public
+          path: ./public/
+      
+      - name: Debug
+        run: ls -R ./public
+  
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact static content
+        uses: actions/download-artifact@v3
+        with:
+          name: public
+
+      - name: Debug
+        run: ls -R ./public
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }
+  
+      - name: Copy files to the dev website
+        run: aws s3 sync ./public/ ${{ secret.AWS_BUCKET }} --acl public-read
+        
+      - name: Invalidate index.html
+        run: aws cloudfront create-invalidation --distribution-id ${{ secret.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths /index.html
