@@ -20,6 +20,12 @@ jobs:
         with:
           hugo-version: ${{ secrets.HUGO_VERSION }}
 
+      - name: Hugo theme
+        run: 'git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke'
+
+      - name: Update Hugo theme
+        run: 'git submodule update themes/ananke'
+
       - name: Hugo build
         run: hugo --minify
       
