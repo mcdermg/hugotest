@@ -17,8 +17,6 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Update Hugo theme
-        run: 'git submodule update themes/ananke'
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
