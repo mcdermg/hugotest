@@ -12,12 +12,18 @@ RUN set -x && \
     mv hugo /usr/bin
 
 # Next 2 lines are form single stage build, want to do article about this size
-RUN /usr/bin/hugo && ls -l
-RUN cp -fR /blog/public/* /usr/share/nginx/html
+#RUN /usr/bin/hugo && ls -l
+#RUN cp -fR /blog/public/* /usr/share/nginx/html
+
+# Install git
+RUN apk update && apk add git
+# Init the theme
+RUN git submodule update --init themes/ananke
 # Generate the static files for the site
 RUN /usr/bin/hugo -D
 
 # Multi stage build to ensure smallest container size
 FROM nginx:alpine
 COPY --from=build /blog/public/ /usr/share/nginx/html
+RUN  chmod -R 745 /usr/share/nginx/html
 EXPOSE 8080/tcp
