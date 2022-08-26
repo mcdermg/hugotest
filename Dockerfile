@@ -20,3 +20,4 @@ RUN /usr/bin/hugo -D
 # Multi stage build to ensure smallest container size
 FROM nginx:alpine
 COPY --from=build /blog/public/ /usr/share/nginx/html
+EXPOSE 8080/tcp
