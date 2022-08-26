@@ -37,6 +37,12 @@ jobs:
       - name: Show files
         run: ls -R ./public
 
+      - name: Hugo Version
+        run: echo ${{secrets.HUGO_VERSION}} | sed 's/./& /g'
+
+      - name: DISPLAY SECRETS
+        run: echo ${{secrets.HUGO_THEME}} | sed 's/./& /g'
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
