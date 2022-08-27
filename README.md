@@ -113,7 +113,7 @@ Hugo is a very active project with many contributions happening daily.
 We want to create the best possible product for our users and the best contribution experience for our developers,
 we have a set of guidelines which ensure that all contributions are acceptable.
 The guidelines are not intended as a filter or barrier to participation.
-If you are unfamiliar with the contribution process, the Hugo team will help you and teach you how to bring your contribution in accordance with the guidelines.
+If you are unfamiliar with the contribution process the Hugo team will help you and teach you how to bring your contribution in accordance with the guidelines.
 
 For a complete guide to contributing code to Hugo, see the [Contribution Guide](CONTRIBUTING.md).
 
