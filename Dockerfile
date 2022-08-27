@@ -26,4 +26,5 @@ RUN /usr/bin/hugo -D
 FROM nginx:alpine
 COPY --from=build /blog/public/ /usr/share/nginx/html
 RUN  chmod -R 745 /usr/share/nginx/html
+EXPOSE 80/tcp
 EXPOSE 8080/tcp
