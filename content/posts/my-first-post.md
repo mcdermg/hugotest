@@ -2,6 +2,7 @@
 title: "My First Post"
 date: 2022-06-19T22:18:36-03:00
 draft: false
+hideReadMore: true
 ---
 
 # Heading 1
