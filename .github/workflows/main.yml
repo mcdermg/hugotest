@@ -21,6 +21,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: ${{ secrets.HUGO_VERSION }}
+          extended: true
 
       - name: Update Hugo theme
         run: git submodule update ${{ secrets.HUGO_THEME }}
