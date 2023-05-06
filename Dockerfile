@@ -6,7 +6,8 @@ WORKDIR /blog
 # Set up Hugo
 ARG HUGO_VERSION=0.111.1
 ARG HUGO_THEME='hello-friend'
-ARG HUGO_BINARY=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+ARG HUGO_ARCH=linux-amd64
+ARG HUGO_BINARY=hugo_extended_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz
 ARG HUGO_DOWNLOAD_URL=https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}
 RUN set -x && \
     apt-get update && \
