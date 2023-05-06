@@ -1,0 +1,28 @@
+{{- define "main" -}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ "/" | absURL }}">Home</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>{{ .Title }}</h1>
+            <div>
+                {{ .Content }}
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; {{ now.Year }} - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+{{- end -}}

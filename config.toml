@@ -1,4 +1,4 @@
-baseURL = 'https://www.demotestsite.net/'
+baseURL = 'https://www.garymcdermott.net'
 languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
@@ -29,7 +29,7 @@ paginate = 5
 
 [languages]
   [languages.en]
-    title = "Hello Friend"
+    title = "Gary Mc Dermott Blog"
     subtitle = "A simple theme for Hugo"
     keywords = ""
     copyright = ""
