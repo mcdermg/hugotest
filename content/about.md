@@ -7,7 +7,7 @@ All about me I suppose.
 
 I am Irish, originally from Dublin, small village called Killiney. Grew up there always out on my bike and roam the park and climbing tress and wishing that the Goonies was real. No such luck.
 
-Been living abroad for the past few years. What started off as a little trip to South America before taking up a visa in Canada got a bit out of hand and I spent the best part of a year and a half traveling from the Caribbean coast of Colombia right to the southern tip of Tierra Del Fuego. I fell in love with this part of the world and aafter a year living in Canda decided it was time to return down south and I am currently residing in Buenos Aires Argentina.
+Been living abroad for the past few years. What started off as a little trip to South America before taking up a visa in Canada got a bit out of hand and I spent the best part of a year and a half traveling from the Caribbean coast of Colombia right to the southern tip of Tierra Del Fuego. I fell in love with this part of the world and after a year living in Canada decided it was time to return down south and I am currently residing in Buenos Aires Argentina.
 
 I have a bit of a strange background in that after leaving school I studied history, with a focus on the early medieval period. Never mind GOT I was into this stuff way before it was cool, pity nobody listened to me back then. I focused on the Vikings and wrote my undergraduate thesis on the [Viking invasions of the Anglo-Saxon kingdoms](https://www.academia.edu/533600/)
 
