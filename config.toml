@@ -30,7 +30,7 @@ paginate = 5
 [languages]
   [languages.en]
     title = "Gary Mc Dermott Blog"
-    subtitle = "A simple theme for Hugo"
+    subtitle = "Cloud, DevOps, SRE"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
