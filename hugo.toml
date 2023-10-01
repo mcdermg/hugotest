@@ -1,8 +1,8 @@
 baseURL = '/'
-languageCode = "en-us"
-# Add it only if you keep the theme in the `themes` directory.
-# Remove it if you use the theme as a remote Hugo Module.
-theme = "hello-friend"
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+#theme = 'ananke'
+theme = 'hello-friend'
 paginate = 5
 
 [params]
